@@ -39,24 +39,33 @@
 // }
 // msgWithSum(sum,"Spartan");
 
-function login(error, msg){
-    if(error){
-        console.log("Error is: "+error)
-    }
-    else{
-        console.log(msg)
-    }
-}
+// function login(error, msg){
+//     if(error){
+//         console.log("Error is: "+error)
+//     }
+//     else{
+//         console.log(msg)
+//     }
+// }
 
-function loginHandler(username, password, clbk){
-    if(username  == "Spartan03" && password == "Spartan@Kratos"){
-        clbk(null, "Login Sucess")
-    }
-    else{
-        clbk("Username or password is incorrect",null)
+// function loginHandler(username, password, clbk){
+//     if(username  == "Spartan03" && password == "Spartan@Kratos"){
+//         clbk(null, "Login Sucess")
+//     }
+//     else{
+//         clbk("Username or password is incorrect",null)
 
-    }
+//     }
     
-}
+// }
 
-loginHandler("Spartan03","Spartan@Kratos",login)
+// loginHandler("Spartan03","Spartan@Kratos",login)
+
+
+
+//Synchronous and Asynchronous examples
+// console.log("Step 1");
+// setTimeout(()=>{console.log("Step 2")},1000)
+// console.log("Step 3")
+
+
