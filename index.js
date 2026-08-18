@@ -65,7 +65,26 @@
 
 //Synchronous and Asynchronous examples
 // console.log("Step 1");
-// setTimeout(()=>{console.log("Step 2")},1000)
+// for(i=0;i<10000;i++){
+//     console.log("i =" +i);
+// }
+// // setTimeout(()=>{console.log("Step 2")},1000)
 // console.log("Step 3")
 
+const button = document.getElementById('btn');
+const container=document.getElementById('container');
 
+    const h1 = document.createElement('h1');
+    console.log(h1)
+    h1.innerText='ABES ENGG COLLEGE';
+// console.log(button)
+// console.log(container)
+
+    function ping(){
+        // alert('server ping')
+    container.innerHTML='<h2>Welcome to DOM</h2>'
+    container.appendChild(h1);
+    }
+
+
+button.addEventListener('click',ping);
